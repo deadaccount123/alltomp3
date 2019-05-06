@@ -1618,7 +1618,7 @@ at3.getPlaylistURLsInfos = (url) => {
       playlistInfos.cover = snippet.thumbnails.medium.url;
     });
     let playlistItemsq = request({
-      url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=' + API_GOOGLE + '&maxResults=50&playlistId=' + playlistId,
+      url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=' + API_GOOGLE + '&maxResults=1000&playlistId=' + playlistId,
       json: true
     }).then((playlistDetails) => {
       let playlistItems = [];
